@@ -13,7 +13,9 @@ spec:
         app: example-application
     spec:
       containers:
-      - name: example-application
-        image: <image-name>:<tag>
+      - image: TsenkoTsenkov/ApplicationExampleGitOps:v2
+        name: ApplicationExampleGitOps
+      - image: <image-name>:<tag>
+        name: example-application
         port:
         - containerPort: 8080
